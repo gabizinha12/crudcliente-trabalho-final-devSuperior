@@ -48,10 +48,10 @@ public class ClientService {
 	
 	private void copyDtoToEntity(ClientDTO dto, Client entity) {
 		entity.setName(dto.getName());
-		entity.setBirthDate(entity.getBirthDate());
-		entity.setChildren(entity.getChildren());
-		entity.setCpf(entity.getCpf());
-		entity.setIncome(entity.getIncome());	
+		entity.setBirthDate(dto.getBirthDate());
+		entity.setChildren(dto.getChildren());
+		entity.setCpf(dto.getCpf());
+		entity.setIncome(dto.getIncome());	
 	}
 
 	public void delete(Long id) {
